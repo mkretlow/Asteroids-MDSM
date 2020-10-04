@@ -25,3 +25,6 @@ Converts a DAMIT/ADAM shape file (shape.txt) to a Wavefront .obj file.
 
 
 
+## Shape model files
+- <https://astro.troja.mff.cuni.cz/projects/damit/>
+- <https://sbn.psi.edu/pds/shape-models/>
