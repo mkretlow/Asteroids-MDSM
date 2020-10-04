@@ -5,6 +5,8 @@ I am sharing here a collection of tools and scripts for my own Asteroid Multi-Da
 ### 3dshape_viewer.py
 Displays simple 3D (asteroid, comets, etc.) shape files. Following packages are required: numpy and pyglet.
 
+![screenshot_small](media/screenshot_small.png)
+
 Three file formats are supported: Wavefront .obj file, DAMIT (and ADAM) shape files, Occult4 shape files (which are similar to DAMIT shape files, but comma seperated and with a blank line between the vertices and facet section).
 
 ```bash
@@ -28,3 +30,4 @@ Converts a DAMIT/ADAM shape file (shape.txt) to a Wavefront .obj file.
 ## Shape model files
 - <https://astro.troja.mff.cuni.cz/projects/damit/>
 - <https://sbn.psi.edu/pds/shape-models/>
+- <http://www.lunar-occultations.com/occult4/shapemodels.zip>
