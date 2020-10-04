@@ -1,5 +1,5 @@
 # Asteroids-MDSM
-A collection of some tools and scripts formy own Asteroid Multi-Data (3D) Shape Modeling work.
+I am sharing here a collection of tools and scripts for my own Asteroid Multi-Data (3D) Shape Modeling work.
 
 
 ### 3dshape_viewer.py
