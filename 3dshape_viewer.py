@@ -498,10 +498,10 @@ DEBUG       = False
 
 # Command line arguments
 if len(sys.argv) != 3 or sys.argv[1].strip() == '-h':
-    print("Usage " + str(sys.argv[0]) + " -o,-s,-t shape_file")
-    print("-o: Wavefront .obj file")
-    print("-s: DAMIT shape file")
-    print("-t: Occult4 shape file (CSV)")
+    print("Usage " + str(sys.argv[0]) + " -w,-d,-o shape_file")
+    print("-w: Wavefront .obj file")
+    print("-d: DAMIT shape file")
+    print("-o: Occult4 shape file (CSV)")
     sys.exit(1)
 
 # Check for Screenshot (single images) and Capture directories and create them if not exist
@@ -515,19 +515,19 @@ ftype = sys.argv[1].strip()
 filename = sys.argv[2].strip()
 
 
-if ftype not in ['-o', '-s', '-t']:
+if ftype not in ['-w', '-d', '-o']:
     print(f"Unknown file type option : {ftype}")
     sys.exit(1)
 
 
 # Read model file according to type of shape file
-if ftype == '-o':
+if ftype == '-w':
     vertices,normals,indices = load_obj(filename)
 
-elif ftype == '-s':
+elif ftype == '-d':
     vertices,normals,indices = load_shp(filename)
 
-elif ftype == '-t':
+elif ftype == '-o':
     vertices,normals,indices = load_shp_occult(filename)
 
 

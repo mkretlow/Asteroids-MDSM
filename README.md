@@ -10,10 +10,10 @@ Displays simple 3D (asteroid, comets, etc.) shape files. Following packages are 
 Three file formats are supported: Wavefront .obj file, DAMIT (and ADAM) shape files, Occult4 shape files (which are similar to DAMIT shape files, but comma seperated and with a blank line between the vertices and facet section).
 
 ```bash
-Usage: 3dshape_viewer.py -o,-s,-t shape_file
--o: Wavefront .obj file
--s: DAMIT shape file
--t: Occult4 shape file (CSV)
+Usage: 3dshape_viewer.py -w,-d,-o shape_file
+-w: Wavefront .obj file
+-d: DAMIT shape file
+-o: Occult4 shape file (CSV)
 ```
 
 The visualization does not consider the aspect angle from the Earth nor the pole orientation wrt to the Ecliptic. Possibly this feature will be added in the future.
